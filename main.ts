@@ -63,7 +63,7 @@ function test() {
                     const img = new Image()
                     img.src = URL.createObjectURL(blob)
                     img.onload = () => {
-                        URL.revokeObjectURL(img.src)
+                        // URL.revokeObjectURL(img.src)
                         const canv2 = document.createElement('canvas')
                         canv2.width = canv.width
                         canv2.height = canv.height
